@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Sublime Text 3," />
+  <meta name="keywords" content="curl," />
 
 
 
@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="关于安装：如果Sublime安装了Package Control,直接Command+Shift+P(Mac下)输入 MarkdownEditing，搜索到点击即可自行安装，重启便可使用。">
-<meta name="keywords" content="Sublime Text 3">
+<meta name="description" content="curl是一种命令行工具，作用是发出网络请求，然后得到和提取数据，显示在”标准输出”（stdout）上面。它支持多种协议，下面举例讲解如何将它用于网站开发。">
+<meta name="keywords" content="curl">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sublimeText下好用的markdown插件与快捷键">
-<meta property="og:url" content="http://yoursite.com/2017/12/06/sublimeText下好用的markdown插件与快捷键/index.html">
+<meta property="og:title" content="curl命令">
+<meta property="og:url" content="http://yoursite.com/2017/12/06/curl命令/index.html">
 <meta property="og:site_name" content="谢泽的网络日志">
-<meta property="og:description" content="关于安装：如果Sublime安装了Package Control,直接Command+Shift+P(Mac下)输入 MarkdownEditing，搜索到点击即可自行安装，重启便可使用。">
+<meta property="og:description" content="curl是一种命令行工具，作用是发出网络请求，然后得到和提取数据，显示在”标准输出”（stdout）上面。它支持多种协议，下面举例讲解如何将它用于网站开发。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-06T07:25:09.000Z">
+<meta property="og:updated_time" content="2017-12-06T14:29:21.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sublimeText下好用的markdown插件与快捷键">
-<meta name="twitter:description" content="关于安装：如果Sublime安装了Package Control,直接Command+Shift+P(Mac下)输入 MarkdownEditing，搜索到点击即可自行安装，重启便可使用。">
+<meta name="twitter:title" content="curl命令">
+<meta name="twitter:description" content="curl是一种命令行工具，作用是发出网络请求，然后得到和提取数据，显示在”标准输出”（stdout）上面。它支持多种协议，下面举例讲解如何将它用于网站开发。">
 
 
 
@@ -134,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/12/06/sublimeText下好用的markdown插件与快捷键/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/12/06/curl命令/"/>
 
 
 
 
 
-  <title>sublimeText下好用的markdown插件与快捷键 | 谢泽的网络日志</title>
+  <title>curl命令 | 谢泽的网络日志</title>
   
 
 
@@ -326,7 +326,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/06/sublimeText下好用的markdown插件与快捷键/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/06/curl命令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="谢泽">
@@ -343,7 +343,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">sublimeText下好用的markdown插件与快捷键</h1>
+          <h1 class="post-title" itemprop="name headline">curl命令</h1>
         
 
         <div class="post-meta">
@@ -355,7 +355,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-06T14:15:45+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-06T15:13:43+08:00">
                 2017-12-06
               </time>
             
@@ -378,8 +378,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端技术/" itemprop="url" rel="index">
-                    <span itemprop="name">前端技术</span>
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
                   </a>
                 </span>
 
@@ -420,11 +420,29 @@
       
 
       
-        <h2 id="关于安装："><a href="#关于安装：" class="headerlink" title="关于安装："></a>关于安装：</h2><p>如果<code>Sublime</code>安装了<code>Package Control</code>,直接<code>Command+Shift+P</code>(Mac下)输入 <code>MarkdownEditing</code>，搜索到点击即可自行安装，重启便可使用。</p>
-<a id="more"></a>
-<h2 id="关于特性："><a href="#关于特性：" class="headerlink" title="关于特性："></a>关于特性：</h2><p><code>MarkdownEditing</code> 从视觉和便捷性上针对 Markdown 文档的编辑进行了一系列的优化。具体如下(Mac下)：<br>安装后针对 <code>md\mdown\mmd\txt</code> 格式文件启用插件。颜色方案仿 Byword及iA writer。<br>自动匹配星号（*）、下划线（_）及反引号（<code>），选中文本按下以上符号能自动在所选文本前后添加配对的符号，方便粗体、斜体和代码框的输入。
-直接输入配对的符号后按下退格键（</code>backspace`），则两个符号都会被删除；直接输入配对的符号后按下空格键，则会自动删除后一个。<br>对“选中文字后输入左括号”这一动作进行了调整，以便插入markdown链接。<br>拷贝一个链接，选中文本后按下 ⌘⌥V 会自动插入内联链接。<br>拷贝一个链接，选中文本后按下 ⌘⌥R 会自动插入引用链接。<br>⌘⌥K 插入链接；⌘⇧K 插入图片。<br>⌘⇧B 和 ⌘⇧I 分别用于加粗体和斜体。<br>⌘^1..6 对于选中的内容前加对应个数#,即对选中内容字体大小设置为h1~h6;<br>⌘⇧6插入文档脚注并且跳转到它的定义；具体可参见:Footnotes;<br>选中文本后按下 # 会自动在文本前后进行配对，可重复按下来定义标题级别。</p>
-<h2 id="关于配置"><a href="#关于配置" class="headerlink" title="关于配置:"></a>关于配置:</h2><p>有些快捷键可能与系统的一些发生冲突，可以编辑 <code>~/Library/Application Support/Sublime Text/Packages/MarkdownEditing/Default (OSX).sublime-keymap</code> 改掉。<br>另外还有一些设置可以在 <code>~/Library/Application Support/Sublime Text 2/Packages/MarkdownEditing/Markdown.sublime-settings</code> 中进行修改。<br>比如除了默认的颜色主题外，MarkdownEditing 还提供了一个高亮显示编辑行 MarkdownEditor-Focus，就可以在 Markdown.sublime-settings 这个文件中找到并去掉注释保存生效。</p>
+        <p>curl是一种命令行工具，作用是发出网络请求，然后得到和提取数据，显示在”标准输出”（stdout）上面。<br>它支持多种协议，下面举例讲解如何将它用于网站开发。<br><a id="more"></a></p>
+<h2 id="查看网页源码"><a href="#查看网页源码" class="headerlink" title="查看网页源码"></a>查看网页源码</h2><p>直接在curl命令后加上网址，就可以看到网页源码。我们以网址www.sina.com为例（选择该网址，主要因为它的网页代码较短）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">　　$ curl www.sina.com</span><br><span class="line">　　&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;</span><br><span class="line">　　&lt;html&gt;&lt;head&gt;</span><br><span class="line">　　&lt;title&gt;301 Moved Permanently&lt;/title&gt;</span><br><span class="line">　　&lt;/head&gt;&lt;body&gt;</span><br><span class="line">　　&lt;h1&gt;Moved Permanently&lt;/h1&gt;</span><br><span class="line">　　&lt;p&gt;The document has moved &lt;a href=&quot;http://www.sina.com.cn/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</span><br><span class="line">　　&lt;/body&gt;&lt;/html&gt;</span><br><span class="line">如果要把这个网页保存下来，可以使用`-o`参数，这就相当于使用wget命令了。</span><br><span class="line">　　$ curl -o [文件名] www.sina.com</span><br></pre></td></tr></table></figure></p>
+<h2 id="自动跳转"><a href="#自动跳转" class="headerlink" title="自动跳转"></a>自动跳转</h2><p>有的网址是自动跳转的。使用<code>-L</code>参数，curl就会跳转到新的网址。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ curl -L www.sina.com</span><br></pre></td></tr></table></figure></p>
+<p>键入上面的命令，结果就自动跳转为www.sina.com.cn。</p>
+<h2 id="显示头信息"><a href="#显示头信息" class="headerlink" title="显示头信息"></a>显示头信息</h2><p><code>-i</code>参数可以显示http response的头信息，连同网页代码一起。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">　　$ curl -i www.sina.com</span><br><span class="line">　　HTTP/1.0 301 Moved Permanently</span><br><span class="line">　　Date: Sat, 03 Sep 2011 23:44:10 GMT</span><br><span class="line">　　Server: Apache/2.0.54 (Unix)</span><br><span class="line">　　Location: http://www.sina.com.cn/</span><br><span class="line">　　Cache-Control: max-age=3600</span><br><span class="line">　　Expires: Sun, 04 Sep 2011 00:44:10 GMT</span><br><span class="line">　　Vary: Accept-Encoding</span><br><span class="line">　　Content-Length: 231</span><br><span class="line">　　Content-Type: text/html; charset=iso-8859-1</span><br><span class="line">　　Age: 3239</span><br><span class="line">　　X-Cache: HIT from sh201-9.sina.com.cn</span><br><span class="line">　　Connection: close</span><br><span class="line">　　&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;</span><br><span class="line">　　&lt;html&gt;&lt;head&gt;</span><br><span class="line">　　&lt;title&gt;301 Moved Permanently&lt;/title&gt;</span><br><span class="line">　　&lt;/head&gt;&lt;body&gt;</span><br><span class="line">　　&lt;h1&gt;Moved Permanently&lt;/h1&gt;</span><br><span class="line">　　&lt;p&gt;The document has moved &lt;a href=&quot;http://www.sina.com.cn/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</span><br><span class="line">　　&lt;/body&gt;&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<p><code>-I</code>参数则是只显示http response的头信息。<br>四、显示通信过程<br><code>-v</code>参数可以显示一次http通信的整个过程，包括端口连接和http request头信息。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">　　$ curl -v www.sina.com</span><br><span class="line">　　* About to connect() to www.sina.com port 80 (#0)</span><br><span class="line">　　* Trying 61.172.201.195... connected</span><br><span class="line">　　* Connected to www.sina.com (61.172.201.195) port 80 (#0)</span><br><span class="line">　　&gt; GET / HTTP/1.1</span><br><span class="line">　　&gt; User-Agent: curl/7.21.3 (i686-pc-linux-gnu) libcurl/7.21.3 OpenSSL/0.9.8o zlib/1.2.3.4 libidn/1.18</span><br><span class="line">　　&gt; Host: www.sina.com</span><br><span class="line">　　&gt; Accept: */*</span><br><span class="line">　　&gt; </span><br><span class="line">　　* HTTP 1.0, assume close after body</span><br><span class="line">　　&lt; HTTP/1.0 301 Moved Permanently</span><br><span class="line">　　&lt; Date: Sun, 04 Sep 2011 00:42:39 GMT</span><br><span class="line">　　&lt; Server: Apache/2.0.54 (Unix)</span><br><span class="line">　　&lt; Location: http://www.sina.com.cn/</span><br><span class="line">　　&lt; Cache-Control: max-age=3600</span><br><span class="line">　　&lt; Expires: Sun, 04 Sep 2011 01:42:39 GMT</span><br><span class="line">　　&lt; Vary: Accept-Encoding</span><br><span class="line">　　&lt; Content-Length: 231</span><br><span class="line">　　&lt; Content-Type: text/html; charset=iso-8859-1</span><br><span class="line">　　&lt; X-Cache: MISS from sh201-19.sina.com.cn</span><br><span class="line">　　&lt; Connection: close</span><br><span class="line">　　&lt; </span><br><span class="line">　　&lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;</span><br><span class="line">　　&lt;html&gt;&lt;head&gt;</span><br><span class="line">　　&lt;title&gt;301 Moved Permanently&lt;/title&gt;</span><br><span class="line">　　&lt;/head&gt;&lt;body&gt;</span><br><span class="line">　　&lt;h1&gt;Moved Permanently&lt;/h1&gt;</span><br><span class="line">　　&lt;p&gt;The document has moved &lt;a href=&quot;http://www.sina.com.cn/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</span><br><span class="line">　　&lt;/body&gt;&lt;/html&gt;</span><br><span class="line">　　* Closing connection #0</span><br></pre></td></tr></table></figure></p>
+<p>如果你觉得上面的信息还不够，那么下面的命令可以查看更详细的通信过程。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　$ curl --trace output.txt www.sina.com</span><br></pre></td></tr></table></figure></p>
+<p>或者<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　$ curl --trace-ascii output.txt www.sina.com</span><br></pre></td></tr></table></figure></p>
+<p>运行后，请打开output.txt文件查看。</p>
+<h2 id="发送表单信息"><a href="#发送表单信息" class="headerlink" title="发送表单信息"></a>发送表单信息</h2><p>发送表单信息有GET和POST两种方法。GET方法相对简单，只要把数据附在网址后面就行。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　$ curl example.com/form.cgi?data=xxx</span><br></pre></td></tr></table></figure></p>
+<p>POST方法必须把数据和网址分开，curl就要用到–data参数。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　$ curl -X POST --data &quot;data=xxx&quot; example.com/form.cgi</span><br></pre></td></tr></table></figure></p>
+<p>如果你的数据没有经过表单编码，还可以让curl为你编码，参数是<code>--data-urlencode</code>。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　$ curl -X POST--data-urlencode &quot;date=April 1&quot; example.com/form.cgi</span><br></pre></td></tr></table></figure></p>
+<h2 id="HTTP动词"><a href="#HTTP动词" class="headerlink" title="HTTP动词"></a>HTTP动词</h2><p>curl默认的HTTP动词是GET，使用<code>-X</code>参数可以支持其他动词。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ curl -X POST www.example.com</span><br><span class="line">$ curl -X DELETE www.example.com</span><br></pre></td></tr></table></figure></p>
+<h2 id="文件上传"><a href="#文件上传" class="headerlink" title="文件上传"></a>文件上传</h2><p>假定文件上传的表单是下面这样：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">　　&lt;form method=&quot;POST&quot; enctype=&apos;multipart/form-data&apos; action=&quot;upload.cgi&quot;&gt;</span><br><span class="line">　　　　&lt;input type=file name=upload&gt;</span><br><span class="line">　　　　&lt;input type=submit name=press value=&quot;OK&quot;&gt;</span><br><span class="line">　　&lt;/form&gt;</span><br></pre></td></tr></table></figure></p>
+<p>你可以用curl这样上传文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　$ curl --form upload=@localfilename --form press=OK [URL]</span><br></pre></td></tr></table></figure></p>
+<h2 id="Referer字段"><a href="#Referer字段" class="headerlink" title="Referer字段"></a>Referer字段</h2><p>有时你需要在http request头信息中，提供一个referer字段，表示你是从哪里跳转过来的。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　$ curl --referer http://www.example.com http://www.example.com</span><br></pre></td></tr></table></figure></p>
+<h2 id="User-Agent字段"><a href="#User-Agent字段" class="headerlink" title="User Agent字段"></a>User Agent字段</h2><p>这个字段是用来表示客户端的设备信息。服务器有时会根据这个字段，针对不同设备，返回不同格式的网页，比如手机版和桌面版。<br>iPhone4的User Agent是<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8A293 Safari/6531.22.7</span><br></pre></td></tr></table></figure></p>
+<p>curl可以这样模拟：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　$ curl --user-agent &quot;[User Agent]&quot; [URL]</span><br></pre></td></tr></table></figure></p>
+<h2 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h2><p>使用<code>--cookie</code>参数，可以让curl发送cookie。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　$ curl --cookie &quot;name=xxx&quot; www.example.com</span><br></pre></td></tr></table></figure></p>
+<p>至于具体的cookie的值，可以从http response头信息的<code>Set-Cookie</code>字段中得到。<br><code>-c cookie-file</code>可以保存服务器返回的cookie到文件，<code>-b cookie-file</code>可以使用这个文件作为cookie信息，进行后续的请求。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">　　$ curl -c cookies http://example.com</span><br><span class="line">　　$ curl -b cookies http://example.com</span><br></pre></td></tr></table></figure></p>
+<h2 id="增加头信息"><a href="#增加头信息" class="headerlink" title="增加头信息"></a>增加头信息</h2><p>有时需要在http request之中，自行增加一个头信息。<code>--header</code>参数就可以起到这个作用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　$ curl --header &quot;Content-Type:application/json&quot; http://example.com</span><br></pre></td></tr></table></figure></p>
+<h2 id="HTTP认证"><a href="#HTTP认证" class="headerlink" title="HTTP认证"></a>HTTP认证</h2><p>有些网域需要HTTP认证，这时curl需要用到<code>--user</code>参数。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">　　$ curl --user name:password example.com</span><br></pre></td></tr></table></figure></p>
+<p>参考资料：<br><a href="http://www.ruanyifeng.com/blog/2011/09/curl.html" target="_blank" rel="noopener">curl网站开发指南</a></p>
 
       
     </div>
@@ -442,7 +460,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Sublime-Text-3/" rel="tag"># Sublime Text 3</a>
+            <a href="/tags/curl/" rel="tag"># curl</a>
           
         </div>
       
@@ -455,8 +473,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/12/05/CSRF攻击与防御原理/" rel="next" title="CSRF攻击与防御原理">
-                <i class="fa fa-chevron-left"></i> CSRF攻击与防御原理
+              <a href="/2017/12/06/sublimeText下好用的markdown插件与快捷键/" rel="next" title="sublimeText下好用的markdown插件与快捷键">
+                <i class="fa fa-chevron-left"></i> sublimeText下好用的markdown插件与快捷键
               </a>
             
           </div>
@@ -464,10 +482,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/12/06/curl命令/" rel="prev" title="curl命令">
-                curl命令 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -624,7 +638,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于安装："><span class="nav-number">1.</span> <span class="nav-text">关于安装：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于特性："><span class="nav-number">2.</span> <span class="nav-text">关于特性：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于配置"><span class="nav-number">3.</span> <span class="nav-text">关于配置:</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#查看网页源码"><span class="nav-number">1.</span> <span class="nav-text">查看网页源码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自动跳转"><span class="nav-number">2.</span> <span class="nav-text">自动跳转</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#显示头信息"><span class="nav-number">3.</span> <span class="nav-text">显示头信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#发送表单信息"><span class="nav-number">4.</span> <span class="nav-text">发送表单信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTTP动词"><span class="nav-number">5.</span> <span class="nav-text">HTTP动词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件上传"><span class="nav-number">6.</span> <span class="nav-text">文件上传</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Referer字段"><span class="nav-number">7.</span> <span class="nav-text">Referer字段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#User-Agent字段"><span class="nav-number">8.</span> <span class="nav-text">User Agent字段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cookie"><span class="nav-number">9.</span> <span class="nav-text">cookie</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#增加头信息"><span class="nav-number">10.</span> <span class="nav-text">增加头信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTTP认证"><span class="nav-number">11.</span> <span class="nav-text">HTTP认证</span></a></li></ol></div>
             
 
           </div>
