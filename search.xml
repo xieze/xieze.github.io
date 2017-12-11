@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[javascript墨卡托经纬度互转]]></title>
+    <url>%2F2017%2F12%2F11%2Fjavascript%E5%A2%A8%E5%8D%A1%E6%89%98%E7%BB%8F%E7%BA%AC%E5%BA%A6%E4%BA%92%E8%BD%AC%2F</url>
+    <content type="text"><![CDATA[墨卡托投影是荷兰地理学家墨卡托于1569年提出的一种地球投影方法，该方法是圆柱投影的一种。 1234567891011121314151617181920212223242526272829/** * 经纬度转墨卡托 * @param poi 经纬度 * @returns &#123;&#123;&#125;&#125; * @private */function _getMercator(poi) &#123;//[114.32894, 30.585748] var mercator = &#123;&#125;; var earthRad = 6378137.0; // console.log("mercator-poi",poi); mercator.x = poi.lng * Math.PI / 180 * earthRad; var a = poi.lat * Math.PI / 180; mercator.y = earthRad / 2 * Math.log((1.0 + Math.sin(a)) / (1.0 - Math.sin(a))); // console.log("mercator",mercator); return mercator; //[12727039.383734727, 3579066.6894065146]&#125;/** * 墨卡托转经纬度 * @param poi 墨卡托 * @returns &#123;&#123;&#125;&#125; * @private */function _getLngLat(poi)&#123; var lnglat = &#123;&#125;; lnglat.lng = poi.x/20037508.34*180; var mmy = poi.y/20037508.34*180; lnglat.lat = 180/Math.PI*(2*Math.atan(Math.exp(mmy*Math.PI/180))-Math.PI/2); return lnglat;&#125;]]></content>
+      <categories>
+        <category>前端技术</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[curl命令]]></title>
     <url>%2F2017%2F12%2F06%2Fcurl%E5%91%BD%E4%BB%A4%2F</url>
     <content type="text"><![CDATA[curl是一种命令行工具，作用是发出网络请求，然后得到和提取数据，显示在”标准输出”（stdout）上面。它支持多种协议，下面举例讲解如何将它用于网站开发。 查看网页源码直接在curl命令后加上网址，就可以看到网页源码。我们以网址www.sina.com为例（选择该网址，主要因为它的网页代码较短）：12345678910 $ curl www.sina.com &lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt; &lt;html&gt;&lt;head&gt; &lt;title&gt;301 Moved Permanently&lt;/title&gt; &lt;/head&gt;&lt;body&gt; &lt;h1&gt;Moved Permanently&lt;/h1&gt; &lt;p&gt;The document has moved &lt;a href=&quot;http://www.sina.com.cn/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt; &lt;/body&gt;&lt;/html&gt;如果要把这个网页保存下来，可以使用`-o`参数，这就相当于使用wget命令了。 $ curl -o [文件名] www.sina.com 自动跳转有的网址是自动跳转的。使用-L参数，curl就会跳转到新的网址。1$ curl -L www.sina.com 键入上面的命令，结果就自动跳转为www.sina.com.cn。 显示头信息-i参数可以显示http response的头信息，连同网页代码一起。1234567891011121314151617181920 $ curl -i www.sina.com HTTP/1.0 301 Moved Permanently Date: Sat, 03 Sep 2011 23:44:10 GMT Server: Apache/2.0.54 (Unix) Location: http://www.sina.com.cn/ Cache-Control: max-age=3600 Expires: Sun, 04 Sep 2011 00:44:10 GMT Vary: Accept-Encoding Content-Length: 231 Content-Type: text/html; charset=iso-8859-1 Age: 3239 X-Cache: HIT from sh201-9.sina.com.cn Connection: close &lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt; &lt;html&gt;&lt;head&gt; &lt;title&gt;301 Moved Permanently&lt;/title&gt; &lt;/head&gt;&lt;body&gt; &lt;h1&gt;Moved Permanently&lt;/h1&gt; &lt;p&gt;The document has moved &lt;a href=&quot;http://www.sina.com.cn/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt; &lt;/body&gt;&lt;/html&gt; -I参数则是只显示http response的头信息。四、显示通信过程-v参数可以显示一次http通信的整个过程，包括端口连接和http request头信息。123456789101112131415161718192021222324252627282930 $ curl -v www.sina.com * About to connect() to www.sina.com port 80 (#0) * Trying 61.172.201.195... connected * Connected to www.sina.com (61.172.201.195) port 80 (#0) &gt; GET / HTTP/1.1 &gt; User-Agent: curl/7.21.3 (i686-pc-linux-gnu) libcurl/7.21.3 OpenSSL/0.9.8o zlib/1.2.3.4 libidn/1.18 &gt; Host: www.sina.com &gt; Accept: */* &gt; * HTTP 1.0, assume close after body &lt; HTTP/1.0 301 Moved Permanently &lt; Date: Sun, 04 Sep 2011 00:42:39 GMT &lt; Server: Apache/2.0.54 (Unix) &lt; Location: http://www.sina.com.cn/ &lt; Cache-Control: max-age=3600 &lt; Expires: Sun, 04 Sep 2011 01:42:39 GMT &lt; Vary: Accept-Encoding &lt; Content-Length: 231 &lt; Content-Type: text/html; charset=iso-8859-1 &lt; X-Cache: MISS from sh201-19.sina.com.cn &lt; Connection: close &lt; &lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt; &lt;html&gt;&lt;head&gt; &lt;title&gt;301 Moved Permanently&lt;/title&gt; &lt;/head&gt;&lt;body&gt; &lt;h1&gt;Moved Permanently&lt;/h1&gt; &lt;p&gt;The document has moved &lt;a href=&quot;http://www.sina.com.cn/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt; &lt;/body&gt;&lt;/html&gt; * Closing connection #0 如果你觉得上面的信息还不够，那么下面的命令可以查看更详细的通信过程。1 $ curl --trace output.txt www.sina.com 或者1 $ curl --trace-ascii output.txt www.sina.com 运行后，请打开output.txt文件查看。 发送表单信息发送表单信息有GET和POST两种方法。GET方法相对简单，只要把数据附在网址后面就行。1 $ curl example.com/form.cgi?data=xxx POST方法必须把数据和网址分开，curl就要用到–data参数。1 $ curl -X POST --data &quot;data=xxx&quot; example.com/form.cgi 如果你的数据没有经过表单编码，还可以让curl为你编码，参数是--data-urlencode。1 $ curl -X POST--data-urlencode &quot;date=April 1&quot; example.com/form.cgi HTTP动词curl默认的HTTP动词是GET，使用-X参数可以支持其他动词。12$ curl -X POST www.example.com$ curl -X DELETE www.example.com 文件上传假定文件上传的表单是下面这样：1234 &lt;form method=&quot;POST&quot; enctype=&apos;multipart/form-data&apos; action=&quot;upload.cgi&quot;&gt; &lt;input type=file name=upload&gt; &lt;input type=submit name=press value=&quot;OK&quot;&gt; &lt;/form&gt; 你可以用curl这样上传文件：1 $ curl --form upload=@localfilename --form press=OK [URL] Referer字段有时你需要在http request头信息中，提供一个referer字段，表示你是从哪里跳转过来的。1 $ curl --referer http://www.example.com http://www.example.com User Agent字段这个字段是用来表示客户端的设备信息。服务器有时会根据这个字段，针对不同设备，返回不同格式的网页，比如手机版和桌面版。iPhone4的User Agent是1 Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8A293 Safari/6531.22.7 curl可以这样模拟：1 $ curl --user-agent &quot;[User Agent]&quot; [URL] cookie使用--cookie参数，可以让curl发送cookie。1 $ curl --cookie &quot;name=xxx&quot; www.example.com 至于具体的cookie的值，可以从http response头信息的Set-Cookie字段中得到。-c cookie-file可以保存服务器返回的cookie到文件，-b cookie-file可以使用这个文件作为cookie信息，进行后续的请求。12 $ curl -c cookies http://example.com $ curl -b cookies http://example.com 增加头信息有时需要在http request之中，自行增加一个头信息。--header参数就可以起到这个作用。1 $ curl --header &quot;Content-Type:application/json&quot; http://example.com HTTP认证有些网域需要HTTP认证，这时curl需要用到--user参数。1 $ curl --user name:password example.com 参考资料：curl网站开发指南]]></content>
@@ -9,6 +20,17 @@
       </categories>
       <tags>
         <tag>curl</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[sublime非常好用的文件对比插件--sublimerge]]></title>
+    <url>%2F2017%2F12%2F06%2Fsublime%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%E7%9A%84%E6%96%87%E4%BB%B6%E5%AF%B9%E6%AF%94%E6%8F%92%E4%BB%B6--sublimerge%2F</url>
+    <content type="text"><![CDATA[Sublimerge还不是Sublime Text的另一个 diff插件。事实上，它是最先进，功能最齐全的插件，将您最喜爱的编辑器变成专业的并排比较和合并工具，具有惊人的功能！ 安装插件如果Sublime安装了Package Control,直接Command+Shift+P(Mac下)输入 sublimerge，搜索到点击即可自行安装，不需重启sublime。 使用插件在sublime下都打开要对比的两个文件，在其中一个文件中，右击，选择“sublimerge”–&gt;&gt;”Compare to *“选择要对比的文件 总结另外未保存对比也是挺有意思的功能，有时候会忘记自己修改了哪里，右击，选择”show unsaved changes“ 参考资料： sublimerge官网]]></content>
+      <categories>
+        <category>sublime</category>
+      </categories>
+      <tags>
+        <tag>sublime</tag>
       </tags>
   </entry>
   <entry>
