@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[require.js的用法]]></title>
     <url>%2F2017%2F12%2F26%2Frequire-js%E7%9A%84%E7%94%A8%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[为什么要用require.js？ 最早的时候，所有Javascript代码都写在一个文件里面，只要加载这一个文件就够了。后来，代码越来越多，一个文件不够了，必须分成多个文件，依次加载。下面的网页代码，相信很多人都见过。]]></content>
+    <content type="text"><![CDATA[为什么要用require.js？ 最早的时候，所有Javascript代码都写在一个文件里面，只要加载这一个文件就够了。后来，代码越来越多，一个文件不够了，必须分成多个文件，依次加载。下面的网页代码，相信很多人都见过。 1&lt;script type="text/javascript" src="1.js"&gt;&lt;/script&gt;]]></content>
       <categories>
         <category>requireJs</category>
       </categories>
